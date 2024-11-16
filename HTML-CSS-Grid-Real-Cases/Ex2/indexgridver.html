@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inbox</title>
+    <script src="https://kit.fontawesome.com/46f8b634df.js" crossorigin="anonymous"></script>
+    <style>
+            * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background-image: linear-gradient(to bottom, rgb(144, 199, 231), rgb(16, 84, 161));
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        padding: 0;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 80px 1fr;
+        width: 100%;
+        max-width: 480px;
+        height: 30em;
+        background-color: #ffffff;
+        border: 1px solid #060505;
+        border-radius: 8px;
+        padding: 15px;
+    }
+
+    .category {
+        background-color: #f7f7f7;
+        border-right: 1px solid #ccc;
+        display: grid;
+        grid-template-rows: repeat(5, auto);
+        align-items: center;
+        justify-items: center;
+        padding-top: 20px;
+    }
+
+    .cate {
+        font-size: 14px;
+        color: #333;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .cate i {
+        display: block;
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    .content {
+        display: grid;
+        grid-template-rows: auto auto repeat(7, auto) auto;
+        padding: 20px;
+        color: #333;
+    }
+
+    .content1 {
+        font-size: 20px;
+        font-weight: bold;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #ccc;
+    }
+    .content1 i{
+        color: gray;
+    }
+    .content2 {
+        font-size: 12px;
+        color: #777;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .content3 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 16px;
+        padding: 8px 0;
+    }
+
+    .content3 i {
+        margin-right: 10px;
+    }
+
+    .number1, .number2, .number3, .number4, .number5, .number6, .number7 {
+        font-size: 14px;
+        color: gray;
+        padding: 2px 8px;
+        border-radius: 12px;
+    }
+
+    .content4 {
+        font-size: 14px;
+        color: #333;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
+        cursor: pointer;
+        border-top: 1px solid #ccc;
+    }
+
+    .content4 i {
+        margin-left: 5px;
+        color: gray;
+    }
+    .content3:hover{
+        background-color: white;
+        border-style: solid;
+        padding: 5px;
+        padding-top: 9px;
+        border-radius: 10px;
+        border-color: rgb(196, 193, 193);
+        color: rgb(4, 156, 251);
+        cursor: pointer;
+    }
+    .content1 i:hover, .content4 i:hover{
+        cursor: pointer;
+        color: black;
+    }
+    .cate:hover{
+        background-color: white;
+        border-style: solid;
+        padding: 5px;
+        padding-top: 9px;
+        border-radius: 10px;
+        border-color: rgb(196, 193, 193);
+        color: rgb(4, 156, 251);
+        cursor: pointer;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+            <div class="category">
+                <div class="cate"><i class="fa-solid fa-globe"></i></div>
+                <div class="cate"><i class="fa-solid fa-address-book"></i>User</div>
+                <div class="cate"><i class="fa-solid fa-paper-plane"></i>Share</div>
+                <div class="cate"><i class="fa-solid fa-message"></i>Chats</div>
+                <div class="cate"><i class="fa-solid fa-bookmark"></i> Mark </div>
+            </div>
+            <div class="content">
+                <div class="content1">Inbox<i class="fa-solid fa-magnifying-glass"></i></div>
+                <div class="content2">CONVERSATIONS</div>
+                <div class="content3"><i class="fa-solid fa-circle-user"></i> You <div class="number1">5</div></div>
+                <div class="content3"><i class="fa-solid fa-at"></i> Mentions <div class="number2">2</div></div>
+                <div class="content3"><i class="fa-solid fa-users-between-lines"></i> All <div class="number3">234</div></div>
+                <div class="content3"><i class="fa-solid fa-circle-user"></i> Unassigned <div  class="number4">20</div></div>
+                <div class="content3"><i class="fa-solid fa-star"></i>Sales<div  class="number5">142</div></div>
+                <div class="content3"><i class="fa-solid fa-headset"></i> Support <div  class="number6">5</div></div>
+                <div class="content3"><i class="fa-solid fa-earth-americas"></i> Global Sales <div  class="number7">23</div></div>
+                <div class="content4">Show Hidden<i class="fa-solid fa-gear"></i></div>
+                <div>Pranking the sky</div>
+            </div>
+    </div>
+</body>
+</html>
